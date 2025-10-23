@@ -53,7 +53,7 @@ header{
 
 .navbar_links-botones:hover::after{
     width: 100%;
-    background-color:rgb(204, 148, 79);
+    background-color:rgb(112, 86, 54);
 }
 .navbar_logo{
     text-decoration: none;
