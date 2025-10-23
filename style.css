@@ -4,9 +4,21 @@
     box-sizing: border-box;
 }
 
+:root{
+    --color-primario:;
+    --color-secundario:;
+    --color-letras:black;
+    --color-main:;
+    --color-efecto-hover:;
+
+}
+header{
+    height: 53px;
+    background-color: rgb(204, 148, 79);;
+}
 .navbar{
     height: 50px;
-    color:black;
+    color:var(--color-letras);
     background-color: white;
     display: flex;
     justify-content: space-around;
@@ -14,16 +26,52 @@
     margin-top: 10px;
     padding: 10px;
 }
+.navbar li{
+    list-style: none;
+}
+.navbar_links{
+    display: flex;
+    gap: 180px;
+}
+.navbar_links-botones{
+    color: var(--color-letras);
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+}
+
+.navbar_links-botones::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #000; /* color de la línea */
+  transition: width 0.3s ease;
+}
+
+.navbar_links-botones:hover::after{
+    width: 100%;
+    background-color:rgb(204, 148, 79);
+}
 .navbar_logo{
     text-decoration: none;
-    color: black;
+    color: var(--color-letras);
     font-size: 20px;
     font-weight: bold;
+}
+.navbar_compras-links{
+    display: flex;
+    gap: 3px;
+}
+.navbar_compras li a{
+    text-decoration: none;
 }
 
 
 main{
-    background-color: tomato;
+    background-color: rgb(255, 255, 255);
 }
 
 footer{
