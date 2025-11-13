@@ -100,12 +100,72 @@ header{
 
 
 main{
+    
     background-color: var(--color-secundario);
 }
 
+.direccion{
+    padding-right: 40px;
+}
+
+.direccion h2{
+    text-align: start;
+    padding-bottom: 28px;
+    width: 556px;
+    font-family: var(--estilos-textoPrincipal);
+    font-size: 16px;
+}
+
+.direccion_formulario form{
+    display: flex;
+    gap: 20px;
+}
+
+.direccion_formulario form input{
+    padding: 13px;
+    height: 42px;
+    width: 294px;
+}
+
+.direccion_formulario form button{
+    padding: 13px;
+    height: 42px;
+    width: 122px;
+    color: var(--color-primario);
+    border-color: var(--color-primario);
+    background-color: #000;
+}
+
+.bloque_informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.bloque_informacion li{
+    list-style: none;
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.bloque_informacion a{
+    text-decoration: none;
+    text-align: start;
+}
+
+
+
+
+
 footer{
+    display: flex;
+    justify-content: flex-start;
     background-color: black;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding-top: 36px;
+    padding-right: 70px;
+    padding-left: 70px;
+    padding-bottom: 60px;
 }
