@@ -4,78 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>AndreyLPZ</title>
+    <link rel="stylesheet" href="estilos/roots.css">
+    <title>Document</title>
 </head>
 <body>
-        <div class="descuento">
-            <h2>RECIBA UN KIT DE MUESTRA LITRO POR LA COMPRA DE UNA LOSION</h2>
+<div class="discount">
+    <h2 class="discount__title">RECIBA UN KIT DE MUESTRA LITRO POR LA COMPRA DE UNA LOSION</h2>
+</div>
+<header>
+    <div class="navbar">
+        <ul class="navbar__list">
+            <li><a class="navbar__link" href="#">HOMBRES</a></li>
+            <li><a class="navbar__link" href="#">MUJERES</a></li>
+            <li><a class="navbar__link" href="#">BOUTIQUE</a></li>
+        </ul>
+        <div class="navbar__brand">
+            <a class="navbar__logo" href="#home">ANDREYLPZ</a>
         </div>
-    <header>
-        <div class="navbar">
-            <ul class="navbar_links">
-                <li><a class="navbar_links-botones" href="#">HOMBRES</a></li>
-                <li><a class="navbar_links-botones" href="#">MUJERES</a></li>
-                <li><a class="navbar_links-botones" href="#">BOUTIQUE</a></li>
-            </ul>
-            <div class="navbar_logo">
-                <a class="navbar_logo" href="#home">ANDREYLPZ</a>
-            </div>
-            <ul class="navbar_links">
-                <li><a class="navbar_links-botones" href="#">BLOG</a></li>
-                <li><a class="navbar_links-botones" href="#">NOSOTROS</a></li>
-            </ul>
+        <ul class="navbar__list">
+            <li><a class="navbar__link" href="#">BLOG</a></li>
+            <li><a class="navbar__link" href="#">NOSOTROS</a></li>
+        </ul>
 
-            <div class="navbar_compras">
-                <nav>
-                    <ul class="navbar_compras-links">
-                        <li><a href="#perfil"><img src="" alt="">PERFIL</a></li>
-                        <li><a href="#compras"><img src="" alt="">CANASTA</a></li>
-                        <li><a href="#buscar"><img src="" alt="">BUSCAR</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="navbar__actions">
+            <nav>
+                <ul class="navbar__actions-list">
+                    <li><a href="#perfil"><img src="assets/iconos/user.png" alt=""></a></li>
+                    <li><a href="#compras"><img src="assets/iconos/shopping.png" alt=""></a></li>
+                    <li><a href="#buscar"><img src="assets/iconos/search.png" alt=""></a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
-    <main>
-        <h1>Aqui va el main</h1>
-    </main>
+<main>
+    <section class="main__section">
+        <h2 class="main__section__title">TORINO</h2>
+        <h3 class="main__section__subtitle">EL AROMA DE LA CELEBRACION</h3>
+        <button class="main__section__button">DESCUBRIR</button>
+    </section>
 
-    <footer>
-        <div class="direccion">
-            <h2>Reciba un 10% de descuento en su próximo pedido superior a 300 cop al 
+</main>
+
+<footer>
+    <div class="footer__section--newsletter">
+        <h2 class="footer__title">Reciba un 10% de descuento en su próximo pedido superior a 300 cop al
             suscribirse al boletín informativo de andreylpz.</h2>
-                <div class="direccion_formulario">
-                <form action="">
-                    <input type="text" name="correo_electronico" id="" placeholder="DIRECCION DE CORREO ELECTRONICO">
-                    <button>INSCRIBIRSE</button>
-                </form>
-                </div>
+        <div class="footer__form-wrapper">
+            <form action="">
+                <input type="text" name="correo_electronico" id="" placeholder="DIRECCION DE CORREO ELECTRONICO">
+                <button>INSCRIBIRSE</button>
+            </form>
         </div>
-        <div class="bloque_informacion">
-            <h2>SERVICIO AL CLIENTE</h2>
-            <ul>
-                <li><a href="#contactanos">Contactanos</a></li>
-                <li><a href="#">Preguntas Frecuentes</a></li>
-            </ul>
-        </div>
-        <div class="bloque_informacion">
-            <h2>LEGAL</h2>
-            <ul>
-                <li><a href="#">Contactanos</a></li>
-                <li><a href="#">Politica de cookies</a></li>
-            </ul>
-        </div>
-        <div class="bloque_informacion">
-            <h2>ELECCION DE PAIS</h2>
-            <ul>
-                <li><a href="#">Colombia</a></li>
-                <li><a href="#">Estados unidos</a></li>
-                <li><a href="#">Ecuador</a></li>
-            </ul>
-        </div>
-    </footer>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">SERVICIO AL CLIENTE</h2>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Contactanos</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Preguntas Frecuentes</a></li>
+        </ul>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">LEGAL</h2>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Contactanos</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Politica de cookies</a></li>
+        </ul>
+    </div>
+    <div class="footer__section">
+        <h2 class="footer__title">ELECCION DE PAIS</h2>
+        <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="#">Colombia</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Estados unidos</a></li>
+            <li class="footer__item"><a class="footer__link" href="#">Ecuador</a></li>
+        </ul>
+    </div>
+</footer>
 
 
 </body>
+
 </html>
+

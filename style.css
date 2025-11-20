@@ -1,114 +1,157 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
-*{
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-:root{
-    --color-primario:#cc9442;
-    --color-secundario:#f0eeef;
-    --color-letras:black;
-    --color-main:;
-    --color-efecto-hover:;
-    --estilos-textoPrincipal:"Raleway", sans-serif;;
-    --estilos-textoSecundario:"Lora", serif;;
-
-
-}
-
-body{
+body {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-rows: 30px 60px 900px 354px;
     background-color: var(--color-secundario);
-}
-header{
-    height: 53px;
-    background-color: #cc9442;
+    overflow-x: hidden;
+
 }
 
-.descuento{
+.discount {
     display: flex;
     justify-content: center;
     background-color: #000;
-    padding-top:5px;
-    padding-bottom:5px ;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
-.descuento h2{
+.discount__title {
     font-family: var(--estilos-textoSecundario);
     font-weight: 400;
     font-size: 16px;
     color: white;
 }
-.navbar{
+
+.navbar {
     height: 50px;
-    color:var(--color-letras);
-    background-color:var(--color-secundario);
+    color: var(--color-letras);
+    background-color: var(--color-secundario);
     display: flex;
     justify-content: space-around;
     text-align: center;
     margin-top: 10px;
     padding: 10px;
+    border-bottom: 2px solid var(--color-primario);
 }
-.navbar li{
+
+.navbar li {
     list-style: none;
     font-family: var(--estilos-textoPrincipal);
     font-weight: 600;
     font-size: 12px;
 
 }
-.navbar_links{
+
+.navbar__list {
     display: flex;
     gap: 180px;
 }
-.navbar_links-botones{
+
+.navbar__link {
     color: var(--color-letras);
     position: relative;
     text-decoration: none;
     padding-bottom: 5px;
 }
 
-.navbar_links-botones::after{
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0%;
-  height: 2px;
-  background-color: #000; /* color de la línea */
-  transition: width 0.3s ease;
+.navbar__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    /* color de la línea */
+    transition: width 0.3s ease;
 }
 
-.navbar_links-botones:hover::after{
+.navbar__link:hover::after {
     width: 100%;
-    background-color:#cc9442;
+    background-color: #cc9442;
 }
-.navbar_logo{
+
+.navbar__logo {
     text-decoration: none;
     color: var(--color-letras);
     font-size: 20px;
     font-weight: 800;
     font-family: var(--estilos-textoPrincipal);
 }
-.navbar_compras-links{
+
+.navbar__actions-list {
     display: flex;
-    gap: 3px;
+    gap: 15.56px;
 }
-.navbar_compras li a{
+
+.navbar__actions-list img {
+    width: 19.55px;
+    height: 19.55px;
+}
+
+.navbar__actions li a {
     text-decoration: none;
 }
 
 
-main{
-    
-    background-color: var(--color-secundario);
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 60px;  
+    background-image: url("/assets/imagenes/torino.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
 }
 
-.direccion{
+.main__section {
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+    gap: 20px;
+}
+
+.main__section__title {
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-letras);
+}
+
+.main__section__subtitle {
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-letras);
+}
+
+.main__section__button {
+    height: 50px;
+    width: 157px;
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--color-letras);
+}
+
+.footer__section--newsletter {
     padding-right: 40px;
 }
 
-.direccion h2{
+.footer__section--newsletter .footer__title {
     text-align: start;
     padding-bottom: 28px;
     width: 556px;
@@ -116,18 +159,18 @@ main{
     font-size: 16px;
 }
 
-.direccion_formulario form{
+.footer__form-wrapper form {
     display: flex;
     gap: 20px;
 }
 
-.direccion_formulario form input{
+.footer__form-wrapper form input {
     padding: 13px;
     height: 42px;
     width: 294px;
 }
 
-.direccion_formulario form button{
+.footer__form-wrapper form button {
     padding: 13px;
     height: 42px;
     width: 122px;
@@ -136,31 +179,35 @@ main{
     background-color: #000;
 }
 
-.bloque_informacion{
+.footer__section {
     display: flex;
+    padding-left: 34px;
     flex-direction: column;
     align-items: flex-start;
+    gap: 20px;
+    border-left: 1px solid var(--color-primario);
 }
 
-.bloque_informacion li{
+
+.footer__item {
     list-style: none;
     font-family: var(--estilos-textoPrincipal);
     font-weight: 500;
     font-size: 14px;
 }
 
-.bloque_informacion a{
+.footer__link {
     text-decoration: none;
     text-align: start;
+    display: flex;
+    margin-bottom: 10px;
+    color: white;
 }
 
 
-
-
-
-footer{
+footer {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     background-color: black;
     color: white;
     text-align: center;
@@ -169,3 +216,4 @@ footer{
     padding-left: 70px;
     padding-bottom: 60px;
 }
+
