@@ -48,7 +48,6 @@ body {
     font-family: var(--estilos-textoPrincipal);
     font-weight: 600;
     font-size: 12px;
-
 }
 
 .navbar__list {
@@ -77,7 +76,7 @@ body {
 
 .navbar__link:hover::after {
     width: 100%;
-    background-color: #cc9442;
+    background-color: var(--color-primario);
 }
 
 .navbar__logo {
@@ -108,7 +107,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    padding-bottom: 60px;  
+    padding-bottom: 60px;
     background-image: url("/assets/imagenes/torino.jpg");
     background-size: cover;
     background-position: center;
@@ -119,8 +118,8 @@ main {
     padding-left: 70px;
     display: flex;
     flex-direction: column;
-    align-items:flex-start;
-    justify-content:flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
     gap: 20px;
 }
 
@@ -147,6 +146,11 @@ main {
     color: var(--color-letras);
     background-color: var(--color-primario);
     border: none;
+}
+
+.main__section__button a {
+    text-decoration: none;
+    color: var(--color-letras);
 }
 
 .footer__section--newsletter {
@@ -219,3 +223,70 @@ footer {
     padding-bottom: 60px;
 }
 
+/* Mega Menu Styles */
+.navbar__item {
+    position: relative;
+}
+
+.navbar__list-megamenu {
+    display: none;
+    position: absolute;
+    top: 135%;
+    left: -120px;
+    width: 100vw;
+    /* Adjust width as needed */
+    background-color: var(--color-secundario);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    padding: 20px;
+    border-top: 2px solid var(--color-primario);
+    text-align: left;
+}
+
+.navbar__item:hover .navbar__list-megamenu {
+    display: block;
+}
+
+.navbar__list-megamenu h2 {
+    display: flex;
+    justify-content:flex-start;
+    font-family: var(--estilos-textoPrincipal);
+    color: var(--color-letras);
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.navbar__list-megamenu__list {
+    display: flex;
+    gap: 47px;
+}
+
+.navbar__list-megamenu__list img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.navbar__list-megamenu__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 columns of links */
+    gap: 30px 30px;
+    width: 100%;
+}
+
+.navbar__list-megamenu__links a {
+    text-decoration: none;
+    color: var(--color-letras);
+    font-family: var(--estilos-textoSecundario);
+    font-size: 14px;
+    transition: color 0.2s;
+}
+
+.navbar__list-megamenu__links a:hover {
+    color: var(--color-primario);
+    font-weight: 600;
+}
