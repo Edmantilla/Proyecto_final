@@ -58,26 +58,7 @@
     border-right: 2px solid var(--color-primario);
 }
 
-.navbar__list-megamenu__links--perfiles {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
-    width: 100%;
-    padding-top: 27px;
-    padding-bottom: 21px;
-}
-
-
 .navbar__list-megamenu__links a {
-    text-decoration: none;
-    color: var(--color-letras);
-    font-family: var(--estilos-textoSecundario);
-    font-size: 14px;
-    transition: color 0.2s;
-}
-
-.navbar__list-megamenu__links--perfiles a {
-    padding: 20px;
     text-decoration: none;
     color: var(--color-letras);
     font-family: var(--estilos-textoSecundario);
@@ -88,6 +69,25 @@
 .navbar__list-megamenu__links a:hover {
     color: var(--color-primario);
     font-weight: 600;
+}
+
+.navbar__list-megamenu__links--perfiles {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    width: 100%;
+    padding-top: 27px;
+    padding-bottom: 21px;
+}
+
+
+.navbar__list-megamenu__links--perfiles a {
+    padding: 20px;
+    text-decoration: none;
+    color: var(--color-letras);
+    font-family: var(--estilos-textoSecundario);
+    font-size: 14px;
+    transition: color 0.2s;
 }
 
 .navbar__list-megamenu__links--perfiles a:hover {
