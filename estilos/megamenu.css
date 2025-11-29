@@ -4,10 +4,12 @@
 }
 
 .navbar__list-megamenu {
-    display: none;
+
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
     left: 0;
-    top: 88px; /* ajusta a la altura real de tu navbar */
+    top: 88px;
     width: 100vw;
     background-color: var(--color-secundario);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -15,10 +17,17 @@
     padding: 20px;
     border-top: 2px solid var(--color-primario);
     text-align: left;
+
+    transition: opacity 0.3s ease, visibility 0s 0.3s;
+
 }
 
 .navbar__item:hover .navbar__list-megamenu {
-    display: block;
+    opacity: 1;
+    visibility: visible;
+
+    /* Se elimina el delay de visibility */
+    transition: opacity 0.3s ease;
 }
 
 .navbar__list-megamenu h2 {
