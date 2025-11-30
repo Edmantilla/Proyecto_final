@@ -1,0 +1,50 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding-bottom: 60px;
+    background-image: url("/assets/imagenes/torino.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+.main__section {
+    padding-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.main__section__title {
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--color-secundario);
+}
+
+.main__section__subtitle {
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 700;
+    font-size: 24px;
+    color: var(--color-secundario);
+}
+
+.main__section__button {
+    height: 50px;
+    width: 157px;
+    font-family: var(--estilos-textoPrincipal);
+    font-weight: 800;
+    font-size: 16px;
+    color: var(--color-letras);
+    background-color: var(--color-primario);
+    border: none;
+}
+
+.main__section__button a {
+    text-decoration: none;
+    color: var(--color-letras);
+}
