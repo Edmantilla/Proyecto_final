@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/estilos/style.css">
+  <link rel="stylesheet" href="/estilos/main-perfil.css">
   <link rel="stylesheet" href="/estilos/roots.css">
   <link rel="stylesheet" href="/estilos/megamenu.css">
   <link rel="stylesheet" href="/estilos/megamenu_lista.css">
@@ -156,9 +157,12 @@
       <div class="navbar__actions">
         <nav>
           <ul class="navbar__actions-list">
-            <li><a href="/vistas/perfil.html"><img src="assets/iconos/user.png" alt=""></a></li>
-            <li><a href="#compras"><img src="assets/iconos/shopping.png" alt=""></a></li>
-            <li><a href="#buscar"><img src="assets/iconos/search.png" alt=""></a></li>
+            <li><a href="/vistas/perfil.html"><img src="../assets/iconos/user.png" alt=""></a></li>
+            <li><a href="#compras"><img src="../assets/iconos/shopping.png" alt=""></a></li>
+            <li class="">
+                <a href="#buscar"><img src="../assets/iconos/search.png" alt=""></a>
+            </li>
+
           </ul>
         </nav>
       </div>
@@ -166,11 +170,26 @@
   </header>
 
   <main>
+    <section class="formulario">
+        <h2 class="formulario-title">LOGIN</h2>
+        <form method="post">
+            <div class="formulario-username">
+                <label>Correo Electronico</label>
+                <input type="text" name="correo electronico" required>
+            </div>
+            <div class="formulario-contrasena">
+                <label>Contraseña</label>
+                <input type="password" name="Contraseña" required>
+            </div>
+            <div class="formulario-recordar">
+                <a class="formulario-recordar" href="">¿Olvidaste tu contraseña?</a>
+            </div>
 
-    <section class="">
-      <h2 class=""></h2>
-      <h3 class=""></h3>
-      <button class=""><a href=""></a></button>
+            <button class="formulario-button">INICIAR SESION</button>
+            <div class="formulario-registrarse">
+                <a class="formulario-registrarse" href="">Crear una cuenta</a>
+            </div>
+        </form>
     </section>
 
   </main>
