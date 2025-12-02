@@ -1,4 +1,3 @@
-
 .navbar__item {
     position: static;
 }
@@ -9,7 +8,7 @@
     visibility: hidden;
     position: absolute;
     left: 0;
-    top: 88px;
+    top: 58px;
     width: 100vw;
     background-color: var(--color-secundario);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);

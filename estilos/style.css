@@ -7,13 +7,12 @@
 }
 
 body {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-rows: 30px 60px 900px 354px;
+    width: 100%;
+    min-height: 100vh;
     background-color: var(--color-secundario);
     overflow-x: hidden;
-
+    padding-top: 90px;
+    /* Space for fixed header (30px discount + 60px navbar) */
 }
 
 .discount {
@@ -22,6 +21,11 @@ body {
     background-color: #000;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1001;
 }
 
 .discount__title {
@@ -32,15 +36,22 @@ body {
 }
 
 .navbar {
-    height: 50px;
+    height: 60px;
+    /* Adjusted to match previous grid row size */
     color: var(--color-letras);
     background-color: var(--color-secundario);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
-    margin-top: 10px;
     padding: 10px;
     border-bottom: 2px solid var(--color-primario);
+    position: fixed;
+    top: 30px;
+    /* Below discount bar */
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0;
 }
 
 .navbar li {
@@ -172,4 +183,3 @@ footer {
     padding-left: 70px;
     padding-bottom: 60px;
 }
-
