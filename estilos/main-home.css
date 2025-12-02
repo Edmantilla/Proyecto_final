@@ -3,29 +3,23 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    padding-bottom: 60px;
-
     width: 100vw;
-    height: 90vh;
+    height: 91vh;
 }
 
 .main__section {
+    height: 100vh;
+    width: 100vw;
+    background-image: url('/assets/imagenes/torino.jpg');
+    background-size: cover;
+    background-position: center;
     padding-left: 70px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: flex-end;
     gap: 20px;
-}
-
-.main__section__img {
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
+    padding-bottom: 60px;
 }
 
 .main__section__title {
