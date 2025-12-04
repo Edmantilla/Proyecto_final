@@ -1,4 +1,6 @@
 
+/* estilos del megamenu */
+
 .navbar__list-megamenu__links--perfiles2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);

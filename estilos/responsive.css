@@ -1,10 +1,10 @@
-/* Responsive Design */
+/*Diseño responsivo*/
 
 /* Tablet (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
     .navbar__list {
         gap: 40px;
-        /* Reduce gap from 180px */
+        /* reduce el gap*/
     }
 
     .navbar {
@@ -85,7 +85,7 @@
 
     .navbar__brand {
         order: -1;
-        /* Move logo to top */
+        /* se mueve el logo al inicio */
         margin-bottom: 10px;
     }
 
@@ -152,21 +152,21 @@
         max-width: 300px;
     }
 
-    /* Megamenu adjustments for mobile */
+    /* Megamenu para movil */
     .navbar__list-megamenu {
         position: static;
         width: 100%;
         opacity: 1;
         visibility: visible;
         display: none;
-        /* Hide by default on mobile, show on hover/focus if needed or use JS */
+        /* se oculta por defecto en movil, se muestra al pasar el mouse o usar js */
         box-shadow: none;
         border-top: none;
         padding: 10px;
         background-color: #f9f9f9;
     }
 
-    /* Simple hover effect for mobile to show menu - not ideal but CSS only */
+    /* Simple hover effect for mobile to show menu  */
     .navbar__item:hover .navbar__list-megamenu {
         display: block;
     }
