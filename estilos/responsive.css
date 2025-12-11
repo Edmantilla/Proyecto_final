@@ -6,10 +6,11 @@
 
 
 /* Tablet (max-width: 1024px) */
+/* Media Query para Tablets (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
     .navbar__list {
         gap: 40px;
-        /* reduce el gap*/
+        /* reduce el espacio entre items del menú */
     }
 
     .navbar {
@@ -59,6 +60,7 @@
 }
 
 /* Mobile (max-width: 768px) */
+/* Media Query para Móviles (max-width: 768px) */
 @media screen and (max-width: 768px) {
     body {
         padding-top: 140px;
@@ -77,7 +79,8 @@
     }
 
     .navbar {
-        display: fle;
+        display: flex;
+        /* Corrección de 'fle' a 'flex' */
         flex-direction: row;
         /* alinear los items en una fila */
         flex-wrap: wrap;
@@ -106,10 +109,12 @@
         /* espacio desde la barra superior */
     }
 
-    /*Checkbox para mostrar el menu*/
+    /*“Cuando el checkbox #navbar-toggle está activado, aplica estos estilos a .navbar__list.”*/
+    
+    /* Lógica del Checkbox Hack para mostrar/ocultar menú */
     #navbar-toggle:checked~.navbar__list {
         display: flex;
-        /* Mostrar cuando el checkbox está activado */
+        /* Mostrar menú en columna cuando el checkbox está activado */
     }
 
     .navbar__hamburger {

@@ -1,4 +1,6 @@
+/* Archivo principal de estilos que importa todos los modulos CSS */
 @import url(/estilos/roots.css);
+/* Variables Globales */
 @import url(/estilos/Base.css);
 @import url(/estilos/main-home.css);
 @import url(/estilos/main-perfil.css);

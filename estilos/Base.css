@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Estilos base y reset del CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +16,7 @@ body {
     padding-top: 90px;
 }
 
-/* estilos del descuento */
+/* Estilos de la barra de descuento superior */
 
 .discount {
     display: flex;
@@ -36,7 +38,7 @@ body {
     color: white;
 }
 
-/* estilos del navbar */
+/* Estilos de la barra de navegación principal */
 
 .navbar {
     height: 60px;
@@ -112,7 +114,7 @@ body {
     text-decoration: none;
 }
 
-/* estilos del footer */
+/* Estilos del pie de página (footer) */
 
 .footer__section--newsletter {
     padding-right: 40px;
