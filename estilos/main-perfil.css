@@ -11,7 +11,7 @@
     flex-direction: column;
     align-items:center;
     justify-content: center;
-    width: 30%;
+    width: 30vw;
     gap: 42px;
 }
 
@@ -48,6 +48,7 @@
     font-family: var(--estilos-textoSecundario);
     font-weight: 500;
     padding-bottom: 17px;
+    width: 30vw;
 }
 
 .formulario-recordar{
