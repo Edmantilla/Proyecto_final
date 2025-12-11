@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* Estilos base y reset del CSS */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,14 +9,14 @@
 }
 
 body {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-rows: 30px 60px 900px 354px;
+    width: 100%;
+    min-height: 100vh;
     background-color: var(--color-secundario);
     overflow-x: hidden;
-
+    padding-top: 90px;
 }
+
+/* Estilos de la barra de descuento superior */
 
 .discount {
     display: flex;
@@ -22,6 +24,11 @@ body {
     background-color: #000;
     padding-top: 5px;
     padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 30px;
+    z-index: 1001;
 }
 
 .discount__title {
@@ -31,16 +38,23 @@ body {
     color: white;
 }
 
+/* Estilos de la barra de navegación principal */
+
 .navbar {
-    height: 50px;
+    height: 60px;
     color: var(--color-letras);
     background-color: var(--color-secundario);
     display: flex;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
-    margin-top: 10px;
     padding: 10px;
     border-bottom: 2px solid var(--color-primario);
+    position: fixed;
+    top: 30px;
+    width: 100%;
+    z-index: 1000;
+    margin-top: 0;
 }
 
 .navbar li {
@@ -70,7 +84,6 @@ body {
     width: 0%;
     height: 2px;
     background-color: #000;
-    /* color de la línea */
     transition: width 0.3s ease;
 }
 
@@ -101,60 +114,7 @@ body {
     text-decoration: none;
 }
 
-/* Main Section Styles */
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-end;
-    padding-bottom: 60px;
-    background-image: url("/assets/imagenes/torino.jpg");
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-}
-
-.main__section {
-    padding-left: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.main__section__title {
-    font-family: var(--estilos-textoPrincipal);
-    font-weight: 700;
-    font-size: 48px;
-    color: var(--color-secundario);
-}
-
-.main__section__subtitle {
-    font-family: var(--estilos-textoPrincipal);
-    font-weight: 700;
-    font-size: 24px;
-    color: var(--color-secundario);
-}
-
-.main__section__button {
-    height: 50px;
-    width: 157px;
-    font-family: var(--estilos-textoPrincipal);
-    font-weight: 800;
-    font-size: 16px;
-    color: var(--color-letras);
-    background-color: var(--color-primario);
-    border: none;
-}
-
-.main__section__button a {
-    text-decoration: none;
-    color: var(--color-letras);
-}
-
-/* Footer Styles */
+/* Estilos del pie de página (footer) */
 
 .footer__section--newsletter {
     padding-right: 40px;
@@ -225,4 +185,3 @@ footer {
     padding-left: 70px;
     padding-bottom: 60px;
 }
-

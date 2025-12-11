@@ -1,3 +1,5 @@
+/* Estilos del Mega Menú desplegable */
+/* Controla la visibilidad y el diseño del menú extendido */
 
 .navbar__item {
     position: static;
@@ -5,11 +7,12 @@
 
 .navbar__list-megamenu {
 
+    /* Inicialmente oculto y posicionado absolutamente */
     opacity: 0;
     visibility: hidden;
     position: absolute;
     left: 0;
-    top: 88px;
+    top: 58px;
     width: 100vw;
     background-color: var(--color-secundario);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -17,7 +20,6 @@
     padding: 20px;
     border-top: 2px solid var(--color-primario);
     text-align: left;
-
     transition: opacity 0.3s ease, visibility 0s 0.3s;
 
 }

@@ -1,4 +1,6 @@
+/* estilos del megamenu */
 
+/* Estilos auxiliares para listas específicas dentro del mega menú (ej: Perfiles) */
 .navbar__list-megamenu__links--perfiles2 {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -8,7 +10,6 @@
     padding-bottom: 21px;
     gap: 30px;
 }
-
 
 .navbar__list-megamenu__links--perfiles2 a {
     text-decoration: none;

@@ -1,20 +1,18 @@
-<!-- Página principal del sitio web (Home) -->
+<!-- Página de perfil de usuario e inicio de sesión -->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/estilos/style.css">
-  <title>Home</title>
+  <link rel="stylesheet" href="../estilos/style.css">
+  <title>perfil</title>
 </head>
 
 <body>
-  <!-- Barra de descuento superior -->
   <div class="discount">
     <h2 class="discount__title">RECIBA UN KIT DE MUESTRA LITRO POR LA COMPRA DE UNA LOSION</h2>
   </div>
-
   <!-- Encabezado y Barra de Navegación -->
   <header>
     <div class="navbar">
@@ -164,8 +162,8 @@
       <div class="navbar__actions">
         <nav>
           <ul class="navbar__actions-list">
-            <li><a href="/vistas/perfil.html"><img src="/assets/iconos/user.png" alt=""></a></li>
-            <li><a href="#compras"><img src="/assets/iconos/shopping.png" alt=""></a></li>
+            <li><a href="/vistas/perfil.html"><img src="../assets/iconos/user.png" alt=""></a></li>
+            <li><a href="#compras"><img src="../assets/iconos/shopping.png" alt=""></a></li>
             <li class="navbar__item">
               <a href="#buscar"><img src="../assets/iconos/search.png" alt=""></a>
               <div class="navbar__list-megamenu">
@@ -177,20 +175,37 @@
                 </div>
               </div>
             </li>
+
           </ul>
         </nav>
       </div>
     </div>
   </header>
 
-  <!-- Contenido Principal -->
-  <main class="main-home">
+  <!-- Contenido Principal: Formulario de Login -->
+  <main class="main-perfil">
+    <section class="formulario">
+      <h2 class="formulario-title">LOGIN</h2>
+      <form method="post">
+        <div class="formulario-username">
+          <label>Correo Electronico</label>
+          <input type="text" name="correo electronico" required>
+        </div>
+        <div class="formulario-contrasena">
+          <label>Contraseña</label>
+          <input type="password" name="Contraseña" required>
+        </div>
+        <div class="formulario-recordar">
+          <a class="formulario-recordar" href="">¿Olvidaste tu contraseña?</a>
+        </div>
 
-    <section class="main__section">
-      <h2 class="main__section__title">TORINO</h2>
-      <h3 class="main__section__subtitle">EL AROMA DE LA CELEBRACION</h3>
-      <button class="main__section__button"><a href="">DESCUBRIR</a></button>
+        <button class="formulario-button">INICIAR SESION</button>
+        <div class="formulario-registrarse">
+          <a class="formulario-registrarse" href="">Crear una cuenta</a>
+        </div>
+      </form>
     </section>
+
   </main>
 
   <!-- Pie de Página -->
