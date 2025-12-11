@@ -22,13 +22,13 @@
 
 }
 
-.navbar__item:hover .navbar__list-megamenu {
-    opacity: 1;
-    visibility: visible;
+    .navbar__item:hover .navbar__list-megamenu {
+        opacity: 1;
+        visibility: visible;
 
-    /* Se elimina el delay de visibility */
-    transition: opacity 0.3s ease;
-}
+        /* Se elimina el delay de visibility */
+        transition: opacity 0.3s ease;
+    }
 
 .navbar__list-megamenu h2 {
     font-family: var(--estilos-textoPrincipal);

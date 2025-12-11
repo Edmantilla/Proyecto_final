@@ -14,6 +14,12 @@
   </div>
   <header>
     <div class="navbar">
+      <input type="checkbox" id="navbar-toggle" class="navbar__toggle">
+      <label for="navbar-toggle" class="navbar__hamburger">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
       <ul class="navbar__list">
         <li class="navbar__item">
           <a class="navbar__link" href="#">HOMBRES</a>
@@ -25,7 +31,7 @@
                 <div class="navbar__list-megamenu__links--title">
                   <h2>PERFUMES</h2>
                 </div>
-                <a href="#">xerjoff</a>
+                <a href="/vistas/cartas.html">xerjoff</a>
                 <a href="#">Club d niut</a>
                 <a href="#">yvesSaint Laurent</a>
                 <a href="#">valentino</a>
@@ -108,7 +114,7 @@
 
         <li class="navbar__item">
           <a class="navbar__link" href="#">BOUTIQUE</a>
-          <div class="navbar__list-megamenu">        
+          <div class="navbar__list-megamenu">
             <div class="navbar__list-megamenu__list">
               <div class="navbar__list-megamenu__list">
                 <div class="navbar__list-megamenu__links--perfiles2">
@@ -125,7 +131,7 @@
               </div>
             </div>
           </div>
-        
+
         </li>
       </ul>
       <div class="navbar__brand">
@@ -156,15 +162,15 @@
             <li><a href="/vistas/perfil.html"><img src="../assets/iconos/user.png" alt=""></a></li>
             <li><a href="#compras"><img src="../assets/iconos/shopping.png" alt=""></a></li>
             <li class="navbar__item">
-                <a href="#buscar"><img src="../assets/iconos/search.png" alt=""></a>
-                <div class="navbar__list-megamenu">        
-                    <div class="navbar__list-megamenu__list">
-                        <div class="navbar__list-megamenu__links--buscador">
-                            <h2>BUSCAR</h2>
-                            <input type="text">
-                        </div>
-                    </div>
+              <a href="#buscar"><img src="../assets/iconos/search.png" alt=""></a>
+              <div class="navbar__list-megamenu">
+                <div class="navbar__list-megamenu__list">
+                  <div class="navbar__list-megamenu__links--buscador">
+                    <h2>BUSCAR</h2>
+                    <input type="text">
+                  </div>
                 </div>
+              </div>
             </li>
 
           </ul>
@@ -175,25 +181,25 @@
 
   <main class="main-perfil">
     <section class="formulario">
-        <h2 class="formulario-title">LOGIN</h2>
-        <form method="post">
-            <div class="formulario-username">
-                <label>Correo Electronico</label>
-                <input type="text" name="correo electronico" required>
-            </div>
-            <div class="formulario-contrasena">
-                <label>Contraseña</label>
-                <input type="password" name="Contraseña" required>
-            </div>
-            <div class="formulario-recordar">
-                <a class="formulario-recordar" href="">¿Olvidaste tu contraseña?</a>
-            </div>
+      <h2 class="formulario-title">LOGIN</h2>
+      <form method="post">
+        <div class="formulario-username">
+          <label>Correo Electronico</label>
+          <input type="text" name="correo electronico" required>
+        </div>
+        <div class="formulario-contrasena">
+          <label>Contraseña</label>
+          <input type="password" name="Contraseña" required>
+        </div>
+        <div class="formulario-recordar">
+          <a class="formulario-recordar" href="">¿Olvidaste tu contraseña?</a>
+        </div>
 
-            <button class="formulario-button">INICIAR SESION</button>
-            <div class="formulario-registrarse">
-                <a class="formulario-registrarse" href="">Crear una cuenta</a>
-            </div>
-        </form>
+        <button class="formulario-button">INICIAR SESION</button>
+        <div class="formulario-registrarse">
+          <a class="formulario-registrarse" href="">Crear una cuenta</a>
+        </div>
+      </form>
     </section>
 
   </main>

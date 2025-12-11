@@ -1,4 +1,9 @@
 /*Diseño responsivo*/
+.navbar__toggle,
+.navbar__hamburger {
+    display: none;
+}
+
 
 /* Tablet (max-width: 1024px) */
 @media screen and (max-width: 1024px) {
@@ -72,26 +77,76 @@
     }
 
     .navbar {
-        flex-direction: column;
+        display: fle;
+        flex-direction: row;
+        /* alinear los items en una fila */
+        flex-wrap: wrap;
+        /* permitir que los items se ajusten a la pantalla */
+        align-items: center;
+        /* alinear los items verticalmente */
+        justify-content: space-between;
         height: auto;
-        gap: 15px;
+        gap: 0;
+        /* dejar el espacio entre los items */
         padding-bottom: 15px;
     }
 
     .navbar__list {
-        gap: 20px;
-        flex-wrap: wrap;
+        display: none;
+        /* se oculta por defecto */
+        width: 100%;
+        /* se fuerza a que se ajuste a la pantalla */
+        order: 4;
+        /* se coloca como el ultimo item */
+        flex-direction: column;
         justify-content: center;
+        text-align: center;
+        gap: 20px;
+        margin-top: 20px;
+        /* espacio desde la barra superior */
+    }
+
+    /*Checkbox para mostrar el menu*/
+    #navbar-toggle:checked~.navbar__list {
+        display: flex;
+        /* Mostrar cuando el checkbox está activado */
+    }
+
+    .navbar__hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        cursor: pointer;
+        order: 1;
+        /* First item */
+        margin: 0;
+    }
+
+    .navbar__hamburger .hamburger-line {
+        height: 3px;
+        width: 100%;
+        background-color: var(--color-letras);
+        /* Asegurar contraste */
+        border-radius: 3px;
     }
 
     .navbar__brand {
-        order: -1;
-        /* se mueve el logo al inicio */
-        margin-bottom: 10px;
+        order: 2;
+        /* Center item */
+        margin-bottom: 0;
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    .navbar__actions {
+        order: 3;
+        /* Right item */
     }
 
     .navbar__actions-list {
-        margin-top: 10px;
+        margin-top: 0;
     }
 
     /* Main Section */
