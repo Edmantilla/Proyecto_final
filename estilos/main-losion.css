@@ -44,6 +44,7 @@
 .section-losion__description__title {
     text-align: center;
     padding: 20px;
+    text-transform: uppercase;
 }
 
 .section-losion__description__paragraph {
