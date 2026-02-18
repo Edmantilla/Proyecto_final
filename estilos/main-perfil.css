@@ -90,3 +90,54 @@
     color: var(--color-letras);
 
 }
+
+/* Estilos para los checkboxes de términos y consentimiento */
+
+.formulario-checkbox {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    width: 30vw;
+    font-family: var(--estilos-textoSecundario);
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--color-letras);
+    margin-bottom: 16px;
+    line-height: 1.5;
+}
+
+.formulario-checkbox input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    margin-top: 2px;
+    accent-color: var(--color-primario);
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    border-bottom: none;
+}
+
+.formulario-checkbox label {
+    cursor: pointer;
+}
+
+.formulario-link {
+    color: var(--color-primario);
+    font-weight: 700;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.formulario-link:hover {
+    color: var(--color-letras);
+}
+
+/* Estilo para el input de fecha */
+
+input[type="date"] {
+    font-family: var(--estilos-textoSecundario);
+    color: var(--color-letras);
+    cursor: pointer;
+}
