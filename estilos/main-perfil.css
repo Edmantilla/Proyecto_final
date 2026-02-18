@@ -1,4 +1,4 @@
-.main-perfil{
+.main-perfil {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,10 +6,10 @@
     margin: 100px 0;
 }
 
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
     width: 30vw;
     gap: 42px;
@@ -23,7 +23,7 @@
     color: var(--color-primario);
 }
 
-.formulario-username{
+.formulario-username {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -34,14 +34,14 @@
 
 }
 
-.formulario input{
+.formulario input {
     border: none;
     padding: 10px;
     border-bottom: 1px solid var(--color-letras);
     background-color: var(--color-secundario);
 }
 
-.formulario-contrasena{
+.formulario-contrasena {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -51,7 +51,7 @@
     width: 30vw;
 }
 
-.formulario-recordar{
+.formulario-recordar {
     font-family: var(--estilos-textoSecundario);
     font-weight: 800;
     margin-bottom: 102px;
@@ -78,10 +78,11 @@
     transform: scale(1.05);
 }
 
-.formulario-registrarse{
+.formulario-registrarse {
     display: flex;
     justify-content: center;
 }
+
 .formulario-registrarse {
     font-family: var(--estilos-textoPrincipal);
     font-weight: 800;
@@ -140,4 +141,34 @@ input[type="date"] {
     font-family: var(--estilos-textoSecundario);
     color: var(--color-letras);
     cursor: pointer;
+}
+
+/* Estilos para la página de recuperar contraseña */
+
+.formulario-descripcion {
+    font-family: var(--estilos-textoSecundario);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-letras);
+    text-align: center;
+    line-height: 1.7;
+    width: 30vw;
+    margin-bottom: 36px;
+    opacity: 0.8;
+}
+
+.formulario-icono-ok {
+    font-size: 48px;
+    color: var(--color-primario);
+    text-align: center;
+    margin-bottom: 24px;
+    font-weight: 700;
+    border: 3px solid var(--color-primario);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px auto;
 }
