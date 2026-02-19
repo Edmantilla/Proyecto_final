@@ -14,9 +14,10 @@
 }
 .section-losion__contenedor {
     display: grid;
-    grid-template-columns: 1fr 200px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 10px;
     width: 100%;
+    text-align: center;
 }
 .section-losion__contenedor2 {
     display: flex;
