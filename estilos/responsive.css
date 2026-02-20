@@ -63,8 +63,8 @@
 /* Media Query para Móviles (max-width: 768px) */
 @media screen and (max-width: 768px) {
     body {
-        padding-top: 140px;
-        /* Increase space for stacked navbar */
+        padding-top: 100px;
+        /* Reduced slightly */
     }
 
     .discount {
@@ -110,7 +110,7 @@
     }
 
     /*“Cuando el checkbox #navbar-toggle está activado, aplica estos estilos a .navbar__list.”*/
-    
+
     /* Lógica del Checkbox Hack para mostrar/ocultar menú */
     #navbar-toggle:checked~.navbar__list {
         display: flex;
@@ -220,14 +220,15 @@
         opacity: 1;
         visibility: visible;
         display: none;
-        /* se oculta por defecto en movil, se muestra al pasar el mouse */
+        /* Hidden by default */
         box-shadow: none;
         border-top: none;
         padding: 10px;
         background-color: var(--color-secundario);
     }
 
-    /* Simple hover effect for mobile to show menu  */
+    /* Make megamenu visible when parent is hovered/focused (basic support) */
+    .navbar__item:hover .navbar__list-megamenu,
     .navbar__item:focus-within .navbar__list-megamenu {
         display: block;
     }
@@ -254,5 +255,55 @@
 
     .navbar__list-megamenu__list img {
         display: none;
+    }
+
+    /* --- New Responsive Overrides for Perfumes/Content --- */
+
+    /* Product Grid (Perfumes Header) */
+    .section-losion__contenedor {
+        grid-template-columns: 1fr;
+        /* Stack vertically */
+    }
+
+    /* Single Product Layout (Split View) */
+    .section-losion__divicion {
+        grid-template-areas:
+            "img"
+            "description";
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section-losion__divicion__img img {
+        height: 50vh;
+        /* Reduce height on mobile */
+    }
+
+    .section-losion__divicion__description {
+        position: static;
+        /* Remove sticky behavior */
+        padding: 0 10px;
+    }
+
+    /* Card Grids */
+    .cards-lociones {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        /* Ensure wrapping */
+        padding: 1rem;
+    }
+
+    /* Ensure images don't overflow */
+    img {
+        max-width: 100%;
+    }
+
+    /* Profile Form Overrides */
+    .formulario,
+    .formulario-username,
+    .formulario-contrasena,
+    .formulario-checkbox,
+    .formulario-descripcion {
+        width: 90vw;
+        /* Increase width on mobile */
     }
 }
