@@ -4,12 +4,12 @@
 
     // ─── Simulated Initial Data ─────────────────────────────────────────────
     const DEFAULT_PRODUCTS = [
-        { id: 1, name: "J'adore", brand: "Cristian Dior", price: 450000, stock: 12, category: "Mujer", image: "/assets/imagenes/J'adore Eau de Parfum.jpg" },
-        { id: 2, name: "One Million", brand: "Paco Rabanne", price: 520000, stock: 8, category: "Hombre", image: "/assets/imagenes/1 million.png" },
-        { id: 3, name: "Chance", brand: "Chanel", price: 480000, stock: 5, category: "Mujer", image: "/assets/imagenes/chance.webp" },
-        { id: 4, name: "Erba Pura", brand: "Xerjoff", price: 750000, stock: 3, category: "Hombre", image: "/assets/imagenes/erba pura.webp" },
-        { id: 5, name: "Invictus", brand: "Paco Rabanne", price: 490000, stock: 15, category: "Hombre", image: "/assets/imagenes/invictus.webp" },
-        { id: 6, name: "Coco Mademoiselle", brand: "Chanel", price: 600000, stock: 7, category: "Mujer", image: "/assets/imagenes/coco mademoiselle.webp" },
+        { id: 1, name: "J'adore", brand: "Cristian Dior", price: 450000, stock: 12, category: "Mujer", image: "../assets/imagenes/J'adore Eau de Parfum.jpg" },
+        { id: 2, name: "One Million", brand: "Paco Rabanne", price: 520000, stock: 8, category: "Hombre", image: "../assets/imagenes/1 million.png" },
+        { id: 3, name: "Chance", brand: "Chanel", price: 480000, stock: 5, category: "Mujer", image: "../assets/imagenes/chance.webp" },
+        { id: 4, name: "Erba Pura", brand: "Xerjoff", price: 750000, stock: 3, category: "Hombre", image: "../assets/imagenes/erba pura.webp" },
+        { id: 5, name: "Invictus", brand: "Paco Rabanne", price: 490000, stock: 15, category: "Hombre", image: "../assets/imagenes/invictus.webp" },
+        { id: 6, name: "Coco Mademoiselle", brand: "Chanel", price: 600000, stock: 7, category: "Mujer", image: "../assets/imagenes/coco mademoiselle.webp" },
     ];
 
     const DEFAULT_ORDERS = [
