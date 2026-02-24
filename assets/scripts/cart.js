@@ -233,8 +233,10 @@
 
     // ─── Init ─────────────────────────────────────────────────────────────────
     function init() {
-        injectCartHTML();
-        wrapShoppingIcon();
+        if (!document.body.hasAttribute('data-no-cart')) {
+            injectCartHTML();
+            wrapShoppingIcon();
+        }
         updateBadge();
         hookAddToCartButtons();
 
